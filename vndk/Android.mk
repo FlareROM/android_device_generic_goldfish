@@ -1,4 +1,4 @@
-ifneq ($(filter generic_x86 generic_x86_64 generic generic_arm64 generic_mips generic_mips64, $(TARGET_DEVICE)),)
+ifneq ($(filter emu_% generic_% generic, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
